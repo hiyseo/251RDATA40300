@@ -20,17 +20,17 @@ pip install -r requirements.txt
 
 ```
 rl_snapbot/
-├── gym/
+├── package/gym/
 │   ├── forward/            # 전방 점프 실험 환경
 │   ├── vertical/           # 수직 점프 실험 환경
 │   └── sidewalk/           # 사이드워킹 실험 환경
-├── result/
+├── package/gym/snapbot_env.py  # 보상 함수 정의 위치
+├── notebook/result/
 │   ├── forward/episode_1000.pth
 │   ├── vertical/episode_900.pth
 │   └── sidewalk/episode_750.pth
-├── package/gym/snapbot_env.py  # 보상 함수 정의 위치
-├── snapbot_train.ipynb     # SAC 학습 노트북
-├── snapbot_eval.ipynb      # 학습된 모델 실행 노트북
+├── notebook/snapbot_train.ipynb     # SAC 학습 노트북
+├── notebook/snapbot_eval.ipynb      # 학습된 모델 실행 노트북
 └── README.md
 ```
 
